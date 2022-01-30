@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobiDelas">
         <activity
+            android:name=".ui.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.MobiDelas.Splash">
@@ -21,8 +27,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+
+        <TextView
+            android:id="@+id/tv_title_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/txt_title_register"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_secondary_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/txt_title_secondary_register"
+            android:textColor="@color/primary_500"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_register" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_secondary_register">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:maxLength="80"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:inputType="numberPassword"
+                android:maxLength="50"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_number_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_number_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Repetir senha"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/view_separate_register"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="#585656"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_number_phone" />
+
+
+        <TextView
+            android:id="@+id/tv_dada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Agora, precisamos"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separate_register" />
+
+        <TextView
+            android:id="@+id/tv_dada_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="de alguns dados"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dada" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_name_data"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dada_new">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_name_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Nome completo"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_nasci"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_name_data">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Data de nascimento"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_andress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_nasci">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_nasci"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Endereço"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_andress">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_phone"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Numero de telefone"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_cpf"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_cpf"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="CPF"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_city"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_cpf">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_city"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Cidade"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_estado"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_city">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_estado"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Estado"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/view_separate_document"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="#585656"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_register_estado" />
+
+        <TextView
+            android:id="@+id/tv_document_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Quase lá, tá com o"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separate_document" />
+
+        <TextView
+            android:id="@+id/tv_dada_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="documentos em mãos?"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_document_new" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_card_conta"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dada_document"
+           >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_recarregar"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="100dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EEEEEF">
+
+                    <TextView
+                        android:id="@+id/tv_recarregar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TIRAR FOTO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="250dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EEEEEF">
+
+                    <TextView
+                        android:id="@+id/tv_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAZER UPLOAD"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view_biometria"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="#585656"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcv_card_conta" />
+
+        <TextView
+            android:id="@+id/tv_biometria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Para fechar, vamos"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_biometria" />
+
+        <TextView
+            android:id="@+id/tv_biometria_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="casdastrar a biometria?"
+            android:textColor="@color/secondary_200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_biometria" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_card_conta_biometri"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_biometria_new"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_biometria"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EEEEEF">
+
+                    <ImageView
+                        android:id="@+id/image_biometria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_biometria"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btn_finish_cadastro"
+            android:layout_width="282dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ic_background_button"
+            android:text="Finalizar cadastro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcv_card_conta_biometri" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+

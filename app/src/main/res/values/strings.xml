@@ -6,4 +6,6 @@
     <string name="txt_btn_create_your_account">CRIE SUA CONTA</string>
     <string name="txt_have_account">Já tem uma conta?</string>
     <string name="txt_login">Faça login aqui.</string>
+    <string name="txt_title_register">Que bom ter ver aqui,</string>
+    <string name="txt_title_secondary_register">bora pedalar?</string>
 </resources>

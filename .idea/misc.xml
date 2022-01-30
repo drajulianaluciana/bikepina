@@ -8,14 +8,26 @@
         <entry key="app/src/main/res/drawable/ic_background_login.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/ic_background_login_white.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/ic_bike_foreground.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable/ic_fingerprint.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_girl.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_login.xml" value="0.132" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable/ic_mapa_03_prancheta_1_1.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_profile_photo.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_rectangle.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/ic_vector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_woman_biking.xml" value="0.132" />
+        <entry key="app/src/main/res/drawable/ic_woman_biking_2x.xml" value="0.132" />
         <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.67" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.46320346320346323" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="app/src/main/res/layout/view_image_login.xml" value="0.20199275362318841" />
         <entry key="app/src/main/res/layout/view_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/view_search.xml" value="0.564484126984127" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_bike.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_bike_round.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.131" />

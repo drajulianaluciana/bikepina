@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_background_login"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Boa tarde!"
+            android:textColor="@color/secondary_200"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_register_number_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_register_number_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Repetir senha"
+                android:inputType="numberPassword"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_create_your_account"
+            android:layout_width="match_parent"
+            android:layout_height="300"
+
+            android:background="@drawable/ic_background_button"
+            android:text="@string/txt_btn_create_your_account"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/cl_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</LinearLayout>
